@@ -88,14 +88,11 @@ class Library {
     giveBookByName(bookName) {
         let searchResult = null;
         this.books.forEach((book, index) =>{
-            console.log (book);
             if (book.name === bookName){
                 searchResult = book;
                 this.books.splice(index, 1);
-                console.log(searchResult);
             }
         });
-        console.log(searchResult);
         return searchResult;
     }
 }
