@@ -29,7 +29,6 @@ class  AlarmClock {
     getCurrentFormattedTime(){
        const now = new Date();
        return now.getHours()+":"+ (now.getMinutes() > 9 ? now.getMinutes() : "0" + now.getMinutes());  
-       now.get
     }
 
     start(){
